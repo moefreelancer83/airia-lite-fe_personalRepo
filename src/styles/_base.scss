@@ -1,0 +1,193 @@
+
+.header {
+    margin-top: 0px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+    padding: 40px 0;
+    @media (max-width: 992px) {
+        position: relative;
+        padding: 32px 0;
+    }
+}
+.header-content {
+    margin-right: 48px;
+    margin-left: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1350px) {
+        max-width: calc(100% - 48px);
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+    .header-left {
+        display: flex;
+        align-items: center;
+        a {
+            width: 42px;
+            height: 42px;
+        }
+        .logo {
+            width: 42px;
+            height: 42px;
+        }
+    }
+    .header-center {
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                margin-right: 15px;
+                margin-left: 15px;
+                a {
+                    padding: 20px 15px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    transition: all 0.3s;
+                    &.active {
+                        color: #8873ff;
+                    }
+                    &:hover {
+                        color: #8873ff;
+                    }
+                }
+            }
+        }
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    .header-right {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1400px) {
+        }
+        @media (max-width: 992px) {
+            margin-right: 0;
+        }
+    }
+}
+.header-values {
+    display: flex;
+    align-items: center;
+    .page-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 133.3%;
+        // text-transform: uppercase;
+        color: #cbefff;
+        text-shadow: 0px 0px 2px rgba(203, 239, 255, 0.75);
+        margin-left: 24px;
+        margin-right: 24px;
+        @media (max-width: 992px) {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+    h5.value {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 185%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #cbefff;
+        text-shadow: 0px 0px 2px rgba(203, 239, 255, 0.75);
+        display: flex;
+        align-items: center;
+        padding-right: 24px;
+        padding-left: 24px;
+        border-left: 2px solid rgb(203, 239, 255, 0.1);
+        span {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 185%;
+            letter-spacing: 0.01em;
+            color: #cbefff;
+            text-shadow: 0px 0px 2px rgba(203, 239, 255, 0.75);
+            margin-left: 14px;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 6px;
+            }
+        }
+        @media (max-width: 1240px) {
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+        @media (max-width: 992px) {
+            padding-right: 0;
+            padding-left: 24px;
+            border: none;
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.mobile {
+        display: none;
+        margin-top: 48px;
+    }
+    @media (max-width: 992px) {
+        display: none;
+        &.mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+.social-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        height: 50px;
+        transition: all 0.3s;
+        @media (max-width: 576px) {
+            height: 30px;
+        }
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        img {
+            filter: brightness(0.8);
+        }
+    }
+}
+.header-wallet {
+    right: 23px;
+    top: 38px;
+    display: flex;
+    @media (max-width: 992px) {
+        display: flex;
+        align-items: center;
+        .mobile-menu {
+            margin-left: 16px;
+            z-index: 100;
+        }
+    }
+}
+main {
+    background-color: #0b1418;
+
+    @media (max-width: 992px) {
+        padding-top: 48px;
+    }
+}

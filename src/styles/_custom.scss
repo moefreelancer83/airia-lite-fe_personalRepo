@@ -1,0 +1,102 @@
+// .wallet-adapter-button {
+//     background-color: transparent !important;
+//     font-family: $font-main !important;
+//     text-transform: uppercase;
+//     border: 2px solid #fff !important;
+//     font-size: 14px !important;
+//     padding: 7px 9px !important;
+//     height: 36px !important;
+// }
+// .wallet-adapter-modal-list .wallet-adapter-button {
+//     border-color: transparent !important;
+// }
+.wallet-adapter-button {
+    border-radius: 0 !important;
+    font-family: "Oxanium" !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    /* identical to box height */
+    color: #ffffff;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.75) !important;
+}
+button.wallet-adapter-button.wallet-adapter-button-trigger {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    width: 190px !important;
+    background-color: #5346b9;
+    height: 42px !important;
+    &:hover {
+        background-color: #4033a1;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 7px !important;
+        background: rgba(255, 255, 255, 0.45);
+        right: 2px;
+        bottom: 2px;
+    }
+}
+.wallet-adapter-dropdown-list {
+    width: 170px !important;
+    border-radius: 0 !important;
+}
+.wallet-adapter-dropdown-list-item {
+    font-size: 16px !important;
+}
+.Dropdown-root {
+    width: 118px;
+    margin-right: 12px;
+    background-color: rgba(5, 13, 17, 0.6);
+    @media (max-width: 992px) {
+        width: 116px;
+    }
+}
+.Dropdown-control {
+    background-color: rgba(5, 13, 17, 0.6) !important;
+    border: 2px solid rgba(203, 239, 255, 0.45) !important;
+}
+.Dropdown-placeholder.is-selected {
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #cbefff;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.75);
+}
+.Dropdown-menu {
+    background-color: #0b1317 !important;
+    border: 2px solid rgba(203, 239, 255, 0.45) !important;
+}
+.Dropdown-option {
+    color: #cbefff !important;
+}
+.Dropdown-option:hover {
+    background-color: #223641 !important;
+}
+.Dropdown-option.is-selected {
+    background-color: #293e49 !important;
+}
+
+.MuiAlert-message {
+    font-size: 16px;
+    color: #fff;
+}
+
+.MuiAlert-standardError {
+    background-color: #e74b4b !important;
+}
+.MuiAlert-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+        * {
+            fill: #fff !important;
+        }
+    }
+}
